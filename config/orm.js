@@ -1,5 +1,15 @@
 var connection = require("./connection");
 
+function printQuestionMarks(num) {
+    var arr = [];
+  
+    for (var i = 0; i < num; i++) {
+      arr.push("?");
+    }
+  
+    return arr.toString();
+  }
+
 var orm = {
     all: function (tableInput, cb) {
         var queryString = "SELECT * FROM " + tableInput + ";";
@@ -7,21 +17,20 @@ var orm = {
         console.log(queryString);
 
         connection.query(queryString, function (err, result) {
-            if (err) {
-                return res.status(500).end();
-            };
+            if (err) throw err;
             cb(result);
         });
     },
     create: function (table, col, val, cb) {
-        var queryString = "INSERT INTO " + table + "SET " + col + " = " + val + ";";
+        var queryString = "INSERT INTO " + table + " (" + col.toString() + ") VALUES (?);";
+        console.log("table ", typeof table, table)
+        console.log("col ", typeof col, col)
+        console.log("val ", typeof val, val)
 
         console.log(queryString);
 
-        connection.query(queryString, function (err, result) {
-            if (err) {
-                return res.status(500).end();
-            };
+        connection.query(queryString, val, function (err, result) {
+            if (err) throw err;
             cb(result);
         });
     },
@@ -31,13 +40,8 @@ var orm = {
         console.log(queryString);
 
         connection.query(queryString, function (err, result) {
-            if (err) {
-                return res.status(500).end();
-            } else if (result.changedRows === 0) {
-                return res.status(404).end();
-            };
+            if (err) throw err;
             cb(result);
-            res.status(200).end();
         });
     }
 };

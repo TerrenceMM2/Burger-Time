@@ -7,14 +7,17 @@ router.get("/", function(req, res) {
         var burger = {
             burgers: data
         };
-        console.log(burger);
         res.render("index", burger);
     });
 });
 
 router.post("/api/burgers", function(req, res) {
-    burger.create(req.body.burger, function(result) {
-        res.json({ id: result});
+    burger.create(["burger_name"], [req.body.burger], function(result) {
+        res.json({
+            status: 200,
+            message: "Burger added!",
+            data: result,
+        })
     });
 });
 
