@@ -12,7 +12,7 @@
                             <p>{{burger_name}}</p>
                         </div>
                         <div class="col-2">
-                            <button type="button" class="eat btn btn-danger btn-sm" data-eaten={{devoured}} data-id={{id}}>Eat!</button>
+                            <button type="button" class="eat btn btn-danger btn-sm" data-eaten={{devoured}} data-id={{id}}>Eat</button>
                         </div>
                     </div>
                     {{/unless}}
@@ -47,12 +47,11 @@
     <form>
         <div class="form-group">
             <input class="form-control" id="textbox" rows="1"></input>
-            <button type="submit" id="submit-burger" class="btn btn-primary">Submit</button>
+            <button type="submit" id="submit-burger" class="btn btn-primary">Create</button>
         </div>
     </form>
 
+    <audio id="bite" src="/assets/audio/bite.mp3" type="audio/mp3"></audio>
+    <audio id="cook" src="/assets/audio/cook.mp3" type="audio/mp3"></audio>
+
 </main>
-
-<!-- Setup the `index.handlebars` to have the template that Handlebars can render onto. -->
-
-<!-- Create a button in `index.handlebars` that will submit the user input into the database. -->

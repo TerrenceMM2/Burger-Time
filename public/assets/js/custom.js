@@ -6,7 +6,6 @@ $(document).ready(function () {
         var newBurger = $("#textbox").val().trim();
 
         $.post("/api/burgers", {burger: newBurger}).then(function(result) {
-            console.log(result);
             location.reload();
         });
     });
@@ -20,9 +19,13 @@ $(document).ready(function () {
             "url": "/api/burgers/" + burgerId,
             "method": "PUT"
         }).then(function(result) {
-            console.log(result);
+            // playAudio("bite");
+            // $.ajax({
+            //     "url": "/",
+            //     "method": "GET"
+            // });
             location.reload();
-        });
+        }); 
     });
 
     $(".make").on("click", function(event) {
@@ -38,8 +41,19 @@ $(document).ready(function () {
                 "eaten": burgerEaten
             }
         }).then(function(result) {
-            console.log(result);
+            // playAudio("cook");
+            // $.ajax({
+            //     "url": "/",
+            //     "method": "GET"
+            // });
             location.reload();
         });
     });
+
+    function playAudio(param){
+        var audio = document.getElementById(param);
+        console.log(audio);
+        audio.currentTime = 0;
+        audio.play();
+    };
 });
