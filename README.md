@@ -1,6 +1,8 @@
 # coursework12-burger
 Vanderbilt Coding Boot Camp - Coursework 11 - "Burger Time!"  
-Live Link: 
+Live Link: https://brgr-tm.herokuapp.com/
+
+- - -
 
 ## Purpose  
 Burger Time is a fun, interactive application that allows users to "eat", "make" and create burgers. This application is meant to illustrate the use of custom API routes, custom ORMs to invoke MySQL queries, and dynamic DOM rendering through Handlebars.
@@ -9,7 +11,7 @@ Burger Time is a fun, interactive application that allows users to "eat", "make"
 
 ## Instructions  
 
-1. Navigate to [Burger Time Link]().  
+1. Navigate to [Burger Time](https://brgr-tm.herokuapp.com/).  
 2. Perform 1 of 3 actions:
    1. Click the "Eat" button to eat an existing burger on the menu.
    2. Click the "Make" button to make an existing burger and add it to the menu.
@@ -37,7 +39,7 @@ To get started ...
 1. [node](https://nodejs.org/en/)
 2. [MySQL](https://www.mysql.com/)
 3. [express](https://www.npmjs.com/package/express)
-4. [mysql(npm)](https://www.npmjs.com/package/mysql)
+4. [mysql (npm)](https://www.npmjs.com/package/mysql)
 5. [handlebars](https://www.npmjs.com/package/express-handlebars)
 
 - - -
