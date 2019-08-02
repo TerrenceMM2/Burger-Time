@@ -6,14 +6,16 @@
             <div class="col-5">
                 <div class="container" id="burger-list">
                     {{#each burgers}}
-                    <div class="row">
+                    {{#unless devoured}}
+                    <div class="row" data-burger="burger{{id}}">
                         <div class="col-10">
                             <p>{{burger_name}}</p>
                         </div>
                         <div class="col-2">
-                            <button type="button" class="btn btn-danger btn-sm" data-id={{id}}>Eat!</button>
+                            <button type="button" class="eat btn btn-danger btn-sm" data-eaten={{devoured}} data-id={{id}}>Eat!</button>
                         </div>
                     </div>
+                    {{/unless}}
                     {{/each}}
                 </div>
             </div>
@@ -23,14 +25,16 @@
             <div class="col-5">
                 <div class="container" id="burgers-eaten">
                     {{#each burgers}}
+                    {{#if devoured}}
                     <div class="row">
                         <div class="col-2">
-                            <button type="button" class="btn btn-warning btn-sm" data-id={{id}}>Make</button>
+                            <button type="button" class="make btn btn-warning btn-sm" data-eaten={{devoured}} data-id={{id}}>Make</button>
                         </div>
                         <div class="col-10">
                             <p>{{burger_name}}</p>
                         </div>
                     </div>
+                    {{/if}}
                     {{/each}}
                 </div>
             </div>
@@ -42,20 +46,12 @@
 
     <form>
         <div class="form-group">
-            <textarea class="form-control" id="textbox" rows="1"></textarea>
+            <input class="form-control" id="textbox" rows="1"></input>
             <button type="submit" id="submit-burger" class="btn btn-primary">Submit</button>
         </div>
     </form>
 
 </main>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-</script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-</script>
 
 <!-- Setup the `index.handlebars` to have the template that Handlebars can render onto. -->
 
