@@ -2,6 +2,7 @@ var express = require("express");
 var router = express.Router();
 var burger = require("../models/burger");
 
+// Get route to retrieve all results and send to index Handlebars file.
 router.get("/", function(req, res) {
     burger.all(function(data) {
         var burger = {
@@ -11,6 +12,7 @@ router.get("/", function(req, res) {
     });
 });
 
+// Post route. Sends 200 status and results.
 router.post("/api/burgers", function(req, res) {
     burger.create(["burger_name"], [req.body.burger], function(result) {
         res.json({
@@ -21,6 +23,7 @@ router.post("/api/burgers", function(req, res) {
     });
 });
 
+// Put (update) route based on id
 router.put("/api/burgers/:id", function(req, res) {
     var condition = "id = " + req.params.id;
     var eaten;
