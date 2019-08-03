@@ -1,6 +1,6 @@
 # coursework12-burger
-Vanderbilt Coding Boot Camp - Coursework 11 - "Burger Time!"  
-Live Link: https://brgr-tm.herokuapp.com/
+Vanderbilt Coding Boot Camp - Coursework 13 - "Burger Time! (Part Deux)"  
+Live Link: Coming Soon ...
 
 - - -
 
@@ -11,7 +11,7 @@ Burger Time is a fun, interactive application that allows users to "eat", "make"
 
 ## Instructions  
 
-1. Navigate to [Burger Time](https://brgr-tm.herokuapp.com/).  
+1. Navigate to [Burger Time](#).  
 2. Perform 1 of 3 actions:
    1. Click the "Eat" button to eat an existing burger on the menu.
    2. Click the "Make" button to make an existing burger and add it to the menu.
@@ -27,11 +27,11 @@ To get started ...
 
 - **Option 1** - 🍴 Fork this repo!
 
-- **Option 2** - 👯 Clone this repo to your local machine using `https://github.com/TerrenceMM2/coursework12-burger.git`
+- **Option 2** - 👯 Clone this repo to your local machine using `https://github.com/TerrenceMM2/coursework13-burger.git`
 
 **Step 2** - **HACK AWAY!** 🔨🔨🔨
 
-**Step 3** - 🔃 Create a new pull request using [https://github.com/TerrenceMM2/coursework12-burger/compare](https://github.com/TerrenceMM2/coursework12-burger/compare)
+**Step 3** - 🔃 Create a new pull request using [https://github.com/TerrenceMM2/coursework13-burger2/compare](https://github.com/TerrenceMM2/coursework13-burger2/compare)
 
 - - -
 
