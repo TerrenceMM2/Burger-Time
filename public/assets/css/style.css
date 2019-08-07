@@ -23,6 +23,10 @@ h3 {
     font-size: 2.5rem;
 }
 
+.row {
+    width: -webkit-fill-available;
+}
+
 #burger-menu {
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -34,6 +38,14 @@ h3 {
 
 #burgers-eaten {
     text-align: left;
+}
+
+.customer {
+    justify-content: flex-end;
+}
+
+.eaten {
+    margin-bottom: 0;
 }
 
 .btn-danger {
@@ -60,12 +72,15 @@ h3 {
 
 .form-group {
     display: flex;
-    justify-content: center;
 }
 
 .form-control {
     display: inline-block;
     width: 80%;
+}
+
+#create-burger {
+    justify-content: center
 }
 
 #submit-burger {

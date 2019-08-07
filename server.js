@@ -7,14 +7,13 @@ var app = express();
 var db = require("./models");
 
 app.use(express.static("public"));
-
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
-require("./routes/api-routes.js")(app);
+require("./routes/api-burger-routes.js")(app);
 
 db.sequelize.sync().then(function() {
   app.listen(PORT, function() {

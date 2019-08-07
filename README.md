@@ -1,6 +1,6 @@
 # coursework13-burger2
 Vanderbilt Coding Boot Camp - Coursework 13 - "Burger Time! (Part Deux)"  
-Live Link: Coming Soon ...
+Live Link: Coming Soon https://brgr-tm2.herokuapp.com
 
 - - -
 
@@ -11,11 +11,14 @@ Burger Time is a fun, interactive application that allows users to "eat", "make"
 
 ## Instructions  
 
-1. Navigate to [Burger Time](#).  
+1. Navigate to [Burger Time](https://brgr-tm2.herokuapp.com).  
 2. Perform 1 of 3 actions:
    1. Click the "Eat" button to eat an existing burger on the menu.
    2. Click the "Make" button to make an existing burger and add it to the menu.
    3. Use the textbox to create a new burger. 
+
+**New Functionality**
+Customers can now "eat" the burgers by entering their name in the textbox under each burger on the menu.
 
 - - - 
 
@@ -27,7 +30,7 @@ To get started ...
 
 - **Option 1** - 🍴 Fork this repo!
 
-- **Option 2** - 👯 Clone this repo to your local machine using `https://github.com/TerrenceMM2/coursework13-burger.git`
+- **Option 2** - 👯 Clone this repo to your local machine using `https://github.com/TerrenceMM2/coursework13-burger2.git`
 
 **Step 2** - **HACK AWAY!** 🔨🔨🔨
 
@@ -41,6 +44,7 @@ To get started ...
 3. [express](https://www.npmjs.com/package/express)
 4. [mysql (npm)](https://www.npmjs.com/package/mysql)
 5. [handlebars](https://www.npmjs.com/package/express-handlebars)
+6. [sequelize](https://www.npmjs.com/package/sequelize)
 
 - - -
 

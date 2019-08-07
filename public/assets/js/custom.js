@@ -14,16 +14,17 @@ $(document).ready(function () {
         event.preventDefault();
 
         var burgerId = $(this).attr("data-id");
+        var customerId = "#customer" + burgerId;
+        var customer = $(customerId).val().trim();
 
         $.ajax({
             "url": "/api/burgers/" + burgerId,
-            "method": "PUT"
+            "method": "PUT",
+            "data": {
+                "customer": customer,
+                "burger": burgerId
+            }
         }).then(function(result) {
-            // playAudio("bite");
-            // $.ajax({
-            //     "url": "/",
-            //     "method": "GET"
-            // });
             location.reload();
         }); 
     });
@@ -41,19 +42,7 @@ $(document).ready(function () {
                 "eaten": burgerEaten
             }
         }).then(function(result) {
-            // playAudio("cook");
-            // $.ajax({
-            //     "url": "/",
-            //     "method": "GET"
-            // });
             location.reload();
         });
     });
-
-    function playAudio(param){
-        var audio = document.getElementById(param);
-        console.log(audio);
-        audio.currentTime = 0;
-        audio.play();
-    };
 });
