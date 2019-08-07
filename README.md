@@ -1,11 +1,11 @@
 # coursework13-burger2
 Vanderbilt Coding Boot Camp - Coursework 13 - "Burger Time! (Part Deux)"  
-Live Link: Coming Soon https://brgr-tm2.herokuapp.com
+Live Link: https://brgr-tm2.herokuapp.com
 
 - - -
 
 ## Purpose  
-Burger Time is a fun, interactive application that allows users to "eat", "make" and create burgers. This application is meant to illustrate the use of custom API routes, custom ORMs to invoke MySQL queries, and dynamic DOM rendering through Handlebars.
+Burger Time is a fun, interactive application that allows users to "eat", "make" and create burgers. This application is meant to illustrate the use of custom API routes, Sequelize, and dynamic DOM rendering through Handlebars.
 
 - - - 
 
@@ -17,8 +17,8 @@ Burger Time is a fun, interactive application that allows users to "eat", "make"
    2. Click the "Make" button to make an existing burger and add it to the menu.
    3. Use the textbox to create a new burger. 
 
-**New Functionality**
-Customers can now "eat" the burgers by entering their name in the textbox under each burger on the menu.
+**New Functionality**  
+3. Customers can now "eat" the burgers by entering their name in the textbox under each burger on the menu.
 
 - - - 
 
