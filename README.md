@@ -22,6 +22,11 @@ Burger Time is a fun, interactive application that allows users to "eat", "make"
 
 - - - 
 
+## Screenshot
+![Burger Time 2 Screenshot](../media/burger-time-screenshot.png?raw=true)
+
+- - - 
+
 ### Contribute  
 
 To get started ...
