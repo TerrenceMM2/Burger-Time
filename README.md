@@ -1,5 +1,4 @@
-# coursework13-burger2
-Vanderbilt Coding Boot Camp - Coursework 13 - "Burger Time! (Part Deux)"  
+# Burger Time
 Live Link: https://brgr-tm2.herokuapp.com
 
 - - -
