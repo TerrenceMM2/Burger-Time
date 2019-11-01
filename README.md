@@ -34,11 +34,11 @@ To get started ...
 
 - **Option 1** - 🍴 Fork this repo!
 
-- **Option 2** - 👯 Clone this repo to your local machine using `https://github.com/TerrenceMM2/coursework13-burger2.git`
+- **Option 2** - 👯 Clone this repo to your local machine using `https://github.com/TerrenceMM2/Burger-Time.git`
 
 **Step 2** - **HACK AWAY!** 🔨🔨🔨
 
-**Step 3** - 🔃 Create a new pull request using [https://github.com/TerrenceMM2/coursework13-burger2/compare](https://github.com/TerrenceMM2/coursework13-burger2/compare)
+**Step 3** - 🔃 Create a new pull request using [https://github.com/TerrenceMM2/Burger-Time/compare](https://github.com/TerrenceMM2/Burger-Time/compare)
 
 - - -
 
